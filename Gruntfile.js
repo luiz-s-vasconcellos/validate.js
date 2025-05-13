@@ -122,6 +122,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-notify');
 
   grunt.registerTask('default', 'watch');
-  grunt.registerTask('build', ['jshint:validate', 'jasmine:specs', 'uglify', 'docco']);
+  grunt.registerTask('build', ['jshint:validate', 'jasmine:specs', 'uglify']);
   grunt.registerTask('test', ['jshint', 'jasmine']);
 };
